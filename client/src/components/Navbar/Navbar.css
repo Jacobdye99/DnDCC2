@@ -9,7 +9,8 @@
 .Top {
     background-color: black;
     position: absolute;
-    height: 100px;
+    height: 90px;
+    margin-top: -5px;
     width: 100%;
     /* border-style: solid; */
 }

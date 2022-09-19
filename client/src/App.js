@@ -2,6 +2,8 @@ import Home from './screens/Home/Home';
 import './App.css';
 import {Routes, Route} from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar';
+import Creator from './screens/Character Creator/Creator';
+import Characters from './screens/Characters/Characters';
 
 function App() {
   return (
@@ -9,8 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/Creator" element={<h1>Character Creation</h1>} />
-        <Route path='/Characters' element={<h1>My Characters</h1>} />
+        <Route path="/Creator" element={<Creator />} />
+        <Route path='/Characters' element={<Characters />} />
       </Routes>
     </div>
   );
