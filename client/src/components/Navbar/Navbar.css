@@ -1,23 +1,25 @@
 #Logo {
-    display: flex;
+    display: inline-flexbox;
     width: 150px;
     position: absolute;
     left: 20px;
-    
-    
+    background-color: black;
 }
 
 .Top {
     background-color: black;
+    position: absolute;
+    height: 100px;
     width: 100%;
-    margin: 20px;
+    /* border-style: solid; */
 }
 
 .CC {
     color: aliceblue;
     display: inline-flexbox;
+    /* margin: 20px; */
+    width: 200px;
     position: absolute;
-    left: 210px;
-    top: 52px;
-
+    left: 40px;
+    top: 30px;
 }
