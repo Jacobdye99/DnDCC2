@@ -1,5 +1,9 @@
 .Creatdiv {
-    border-style: solid;
-    height: 100%;
+    /* border-style: solid; */
+    position: absolute;
+    top: 85px;
+    max-width: 100%;
+    width: 100%;
+    height: fit-content;
     color: green;
 }
