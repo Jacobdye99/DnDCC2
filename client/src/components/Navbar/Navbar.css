@@ -26,7 +26,6 @@
 }
 
 #Creator {
-    color: aliceblue;
     text-decoration: none;
     position: absolute;
     right: 450px;
@@ -34,7 +33,6 @@
 }
 
 #Character {
-    color: aliceblue;
     text-decoration: none;
     position: absolute;
     right: 350px;
@@ -42,7 +40,6 @@
 }
 
 #Login {
-    color: aliceblue;
     text-decoration: none;
     position: absolute;
     right: 280px;
@@ -50,9 +47,16 @@
 }
 
 #Register {
-    color: aliceblue;
     text-decoration: none;
     position: absolute;
     right: 200px;
     top: 55px;
+}
+
+.Links {
+    color: aliceblue;
+}
+
+.Links:hover {
+    color: red;
 }
