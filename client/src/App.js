@@ -6,8 +6,24 @@ import Creator from './screens/Character Creator/Creator';
 import Characters from './screens/Characters/Characters';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import { useState, useEffect } from 'react';
+import { verifyUser } from './Services/users';
 
 function App() {
+  const [currentUser, setCurrentUser] = useState(null)
+
+  useEffect(() => {
+    const getUser = async () => {
+      const user = await verifyUser()
+      setCurrentUser(user)
+    }
+    getUser()
+  }, [])
+
+  const logout = () => {
+    localStorage.removeItem('authToken')
+    setCurrentUser(null)
+  }
   return (
     <div className="App">
       <Navbar />
@@ -16,7 +32,7 @@ function App() {
         <Route path="/Creator" element={<Creator />} />
         <Route path='/Characters' element={<Characters />} />
         <Route path='/Login' element={<Login />} />
-        <Route path='/Register' element={<Register />} />
+        <Route path='/Register' element={<Register currentUser={currentUser} />} />
       </Routes>
     </div>
   );
