@@ -31,10 +31,10 @@ export default function Register(props) {
         }}>
             <fieldset id='border'>
             <legend className='legend'>Register</legend>
-            <input placeholder='Username' className='Inputs' type='text'></input>
-            <input placeholder='Email' className='Inputs' type='email'></input>
-            <input placeholder='Password' className='Inputs' type='password'></input>
-            <input placeholder='image Url' className='Inputs' type='text' ></input>
+            <input placeholder='Username' className='Inputs' type='text' value={username} onChange={(e) => setUsername(e.target.value) }></input>
+            <input placeholder='Email' className='Inputs' type='email' value={email} onChange={(e) => setEmail(e.target.value)}></input>
+            <input placeholder='Password' className='Inputs' type='password' value={password} onChange={(e) => setPassword(e.target.value)}></input>
+            <input placeholder='image Url' className='Inputs' type='text' value={image} onChange={(e) => setImage(e.target.value)}></input>
             <button>Register</button>
             </fieldset>
         </form>
