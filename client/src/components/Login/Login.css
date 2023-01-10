@@ -30,10 +30,17 @@
 }
 
 .button {
-    background-color: #60435F;
-    color: #FDF7FA;
+    background-color: black;
+    color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: red;
+    color: black;
+
 }
 
 .loginForm {

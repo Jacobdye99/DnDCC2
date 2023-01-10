@@ -1,9 +1,64 @@
-.Creatdiv {
-    /* border-style: solid; */
-    position: absolute;
-    top: 85px;
-    max-width: 100%;
-    width: 100%;
-    height: fit-content;
-    color: green;
+.Creatediv {
+    position:absolute;
+    top: 25%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    width: 300px;
+    display: inline-block;
 }
+
+#border {
+    border-color: #60435F;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#legend {
+    text-align: left;
+    color: #60435F;
+}
+
+.creatorForm {
+    display: inline-block;
+    
+    /* margin-top: 30px; */
+    padding: 10px;
+    color: white;
+}
+
+.options {
+        display: inline-block;
+        margin: 10px; 
+        padding: 5px;
+        /* justify-content: center; */
+        background-color: #FDF7FA;
+        text-align: center;
+}
+
+.selects {
+    display: inline-block;
+        margin: 10px; 
+        padding: 5px;
+        width: 150px;
+        justify-content: center;
+        background-color: #FDF7FA;
+        /* text-align: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+.Button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.Button:hover {
+    color: black;
+    background-color: red;
+    cursor: pointer;
+}
+    
