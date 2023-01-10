@@ -26,13 +26,13 @@ function App() {
   }
   return (
     <div className="App">
-      <Navbar />
+      <Navbar currentUser={currentUser} logout={logout}/>
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/Creator" element={<Creator />} />
         <Route path='/Characters' element={<Characters />} />
-        <Route path='/Login' element={<Login />} />
-        <Route path='/Register' element={<Register currentUser={currentUser} />} />
+        <Route path='/Login' element={<Login setCurrentUser={setCurrentUser} />} />
+        <Route path='/Register' element={<Register setCurrentUser={setCurrentUser} />} />
       </Routes>
     </div>
   );

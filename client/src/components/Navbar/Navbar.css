@@ -55,8 +55,35 @@
 
 .Links {
     color: aliceblue;
+    
 }
 
 .Links:hover {
+    color: red;
+}
+
+.NavImg {
+    width: 50px;
+    /* margin-left: 10px; */
+    margin-right: 20px;
+    margin-top: 25px;
+    border-radius: 40px;
+    position:absolute;
+    right: 10px;
+    /* display: inline-flexbox; */
+}
+
+.navButton {
+    text-decoration: none;
+    position: absolute;
+    right: 280px;
+    top: 55px;
+    /* font-size: medium; */
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.navButton:hover {
+    cursor: pointer;
     color: red;
 }
